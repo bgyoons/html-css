@@ -1,0 +1,21 @@
+div {
+    height: 400px;
+    width: 30%;
+    overflow: scroll;
+}
+
+#d1 {
+    background-color: blue;
+    float: left;
+}
+
+#d2 {
+    background-color: cadetblue;
+    float: right;
+}
+
+#d3 {
+    background-color: crimson;
+    float: right;
+    clear: both;
+}

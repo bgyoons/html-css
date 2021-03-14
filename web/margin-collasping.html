@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        h1{
+            border: 1px solid red;
+            margin: 100px;
+        }
+
+        #parent{
+            /* border: 1px solid tomato; */
+            margin-top: 100px;
+        }
+        #child{
+            background-color: turquoise;
+            margin-top: 50px;
+        }
+
+        #empty{
+            margin-top: 50px;
+            margin-bottom: 100px;
+            border: 1px solid tomato;
+        }
+        #normal{
+            background-color: violet;
+            margin-top: 100px; /*위치가안바뀜, 마진겹침*/
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Hello World</h1>
+    <h1>Hello World</h1>
+
+    <div id="parent">
+        <div id="child">
+            Hello World
+        </div>
+    </div>
+
+    <div id="empty"></div>
+    <div id="normal">normal</div>
+</body>
+</html>

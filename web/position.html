@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #other, #parent, #me{
+            border: 5px solid tomato;
+            margin: 10px;
+        }
+        #me{
+            position: relative; /*얘 덕분에 #me가 밖으로 이동할 수 있음*/
+            left: 100px; /*offset 같은 위치 선정을 하기 위해서는 포지션을 상대적으로 설정 필요*/
+            top: 100px;
+        }
+
+
+        #other1, #parent1{
+            border: 5px solid seagreen;
+        }
+        #parent1{
+            position: relative;
+        }
+        #me1{
+            background-color: black;
+            color: white;
+            position: absolute;
+            /*absolute는 html을 기준으로 위치 선정(부모와 링크가 끊김), r
+            elative는 부모 엘리먼트를 기준으로 함
+            부모가 relative를 가진 경우 부모 기준으로 됨
+            즉 static이 아닌 부모를 만나면 그 부모의 위치가 기준*/
+            left: 0;
+            top: 0;
+        }
+
+
+        #other2, #parent2{
+            border: 5px solid fuchsia;
+        }
+        #me2{
+            background-color: black;
+            color: white;
+            position: fixed; /*스크롤과 무관한 위치에 고정*/
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            height: 30px;
+        }
+        #large{
+            height: 10000px;
+            background-color: gainsboro;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <div id="other">other</div>
+    <div id="parent">
+        parent
+        <div id="me">me</div>
+    </div>
+
+<br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <div id="other1">other</div>
+    <div id="parent1">
+        parent
+        <div id="me1">me</div>
+    </div>
+
+<br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <div id="other2">other</div>
+    <div id="parent2">
+        parent
+        <div id="me2">me</div>
+    </div>
+    <div id="large">large</div>
+
+</body>
+</html>

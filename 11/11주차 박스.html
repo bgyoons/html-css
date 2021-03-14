@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title> 박스 사이징 </title>
+        <style>
+            div { 
+                margin: 20px;
+                padding: 20px;
+                border: 20px 10px solid #dddddd;
+                width: 500px;
+            }
+            .cb {
+                box-sizing: content-box;
+            }
+            .bb {
+                box-sizing: border-box;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="cb">
+            <p>contents box : 글에 테두리 느낌 화면 크기에 따라 크기가 변할 것 같음 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi impedit sequi officiis temporibus voluptatum fugiat non eligendi dolorem alias accusantium magni nostrum quos, corporis nesciunt illum aut explicabo nemo?</p>
+        </div>
+        <div class="bb">
+            <p>border box : 그냥 크기 유지 용도 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus, doloremque vitae asperiores soluta voluptas quam dolore culpa, odio error accusamus fugiat quidem molestias ipsa commodi. Quo quidem laboriosam sint tempore.</p>
+        </div>
+    </body>

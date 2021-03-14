@@ -1,0 +1,21 @@
+<html>
+  <body>
+    <div
+      id="test"
+      onmouseover="changeText1(this);"
+      onmouseout="changeText2(this);"
+      style="font-size: 50px;"
+    >
+      Normal text!
+    </div>
+  </body>
+
+  <script>
+    function changeText1(element) {
+      element.innerHTML = "Secret Text!";
+    }
+    function changeText2(element) {
+      element.innerHTML = "Normal Text!";
+    }
+  </script>
+</html>

@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+    <body>
+        <fieldset>
+            <legend>GET</legend>
+            url에 전송된 데이터가 물음표와 앤드로 노출됨. 정보의 길이 제한 없음. 북마킹
+            <form method="GET">
+                <p>
+                    닉네임 :
+                    <input type="text" name="nickname" >
+                    <br>
+                </p>
+                <p>
+                    직업 :
+                <select name="job">
+                    <option value="designer">디자이너</option>
+                    <option value="programmer">프로그래머</option>
+                    <option value="planner">기획자</option>
+                </select>
+                </p>
+
+                <input type="submit" value="전송"/>
+            </form>
+        </fieldset>
+
+        <fieldset>
+            <legend>POST</legend>
+            url 변화가 없음, 개발자 서버 네트워크에 폼 결과가 나타남. 서버 쪽에 어떤 작음을 할 경우에 사용.
+            <form method="POST">
+                <p>
+                    닉네임 :
+                    <input type="text" name="nickname" >
+                    <br>
+                </p>
+                <p>
+                    직업 :
+                <select name="job">
+                    <option value="designer">디자이너</option>
+                    <option value="programmer">프로그래머</option>
+                    <option value="planner">기획자</option>
+                </select>
+                </p>
+
+                <input type="submit" value="전송"/>
+            </form>
+        </fieldset>
+<br><br>
+        <form action="url" method="GET">
+            닉네임 :
+            <input type="text" name="nuckname" readonly="readonly" value="bys"/>
+            <br>
+            닉네임 :
+            <input type="text" name="nuckname" disabled="disabled" value="bys"/>
+            <br>
+            <input type="submit">
+        </form>
+<br><br>
+        <form action="url" method="GET">
+            비밀번호 :
+            <input type="password" name="password" />
+            <br>
+            <input type="submit">
+        </form>
+<br><br>
+        <form action="url" method="GET">
+            이름 :
+            <input type="text" name="name"/>
+            <input type="hidden" name="language"/>
+            <br>
+            <input type="submit"/>
+        </form>
+<br><br>
+        <form action="url" method="GET">
+            내용 : <br>
+            <textarea rows="5" cols="20"></textarea>
+            <br>
+            <input type="submit"/>
+        </form>
+<br><br>
+        <form method="POST">
+            관심사 : <br>
+            <input type="radio" name="interest" value="design" checked="checked">디자이너<br>
+            <input type="radio" name="interest" value="programmer">프로그래머<br>
+            <input type="radio" name="interest" value="planner">기획자<br>
+            <input type="submit"/>
+        </form>
+<br><br>
+        <form method="GET">
+            관심사 : <br>
+            <input type="checkbox" name="interest[]" value="design" checked="checked">디자이너<br>
+            <input type="checkbox" name="interest[]" value="programmer" checked="checked">프로그래머<br>
+            <input type="checkbox" name="interest[]" value="planner">기획자<br>
+            <input type="submit"/>
+        </form>
+<br><br>
+        <form method="POST" enctype="multipart/form-data">
+            <input type="file" name="image"/>
+            <input type="submit"/>
+        </form>
+
+    </body>
+</html>
