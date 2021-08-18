@@ -1,7 +1,7 @@
 # html/css 연습
-
 <h3> marathon01, 02 </h3>
-<h4> 20.12.07 [웹 프로그래밍 기초] 기말과제 </h4>
+<h4> [웹 프로그래밍 기초] 기말과제 </h4>
+updated 2020.12.07
 <img src="https://user-images.githubusercontent.com/73841260/129967456-a54c80f6-7fbe-4150-9a40-93832ab58908.png"/>
 <img src="https://user-images.githubusercontent.com/73841260/129967603-461808cb-f065-4bb7-85c1-f2af0e123cd8.png"/>
 <img src="https://user-images.githubusercontent.com/73841260/129967604-2c1c09fd-94c1-4377-bff3-7a443b1ae351.png"/>
